@@ -12,3 +12,5 @@ services:
         value: your_mongo_uri_here
       - key: DB_NAME
         value: TabiyOvozSirlari
+  startCommand: bash start.sh
+
