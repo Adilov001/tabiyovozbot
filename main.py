@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+# This is my telegram bot
 from aiogram import Bot, Dispatcher, types
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.filters import Command
