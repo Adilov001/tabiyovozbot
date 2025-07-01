@@ -140,19 +140,69 @@ async def show_menu(message: types.Message):
 @dp.callback_query(F.data == "info")
 async def show_info(callback: types.CallbackQuery):
     text = """
-📣 Tabiiy Ovoz Sirlari Kursi haqida to‘liq ma’lumot...
+📣 Tabiiy Ovoz Sirlari Kursi haqida to‘liq ma’lumot
+
+Assalamu alaykum, hurmatli tilovat va ovoz san’atiga qiziqadigan birodar va opa-singillar!
+
+Sizni “Tabiiy Ovoz Sirlari” onlayn kursimizga qiziqish bildirganingiz uchun chin dildan minnatdorchilik bildiramiz.
+
+🎙 Bu kurs kimlar uchun?
+▫️ Qur’on tilovati chog‘ida tez charchab qoladiganlar uchun
+▫️ Ovozining tabiiy, jozibali va barakali bo‘lishini istaganlar uchun
+▫️ Masjid muazzinlari, xatib va imomlar uchun
+▫️ O‘z ustida ishlamoqchi bo‘lgan erkak va ayollar uchun
+
+📚 Kurs davomida siz nimalarga ega bo‘lasiz?
+
+✅ Ovozdan to‘g‘ri va sog‘lom foydalanish sirlarini o‘rganasiz
+✅ Tabiiy va sof ovoz chiqarishni shakllantirasiz
+✅ Qur’on tilovatini charchamasdan uzoq davom ettirishga o‘rganasiz
+✅ Tilovat va azon san’atida ishlatiladigan 8 ta maqom haqida chuqur tushunchaga ega bo‘lasiz
+✅ Maqomlar orasidagi farqlarni eshitib ajrata olasiz
+✅ Ovoz sifati doimiy bo‘lishi uchun maxsus mashqlar, tavsiyalar va amaliyotlar taqdim etiladi
+
+👩‍🦰 Ayollar ham qatnasha oladimi?
+Albatta! Kursimiz ham ayollar, ham erkaklar uchun maxsus moslashtirilgan.
+
+🧒 Yosh chegarasi:
+Kursimizga 16 yoshdan 40 yoshgacha bo‘lgan barcha ishtiyoqmandlar qatnasha oladi.
 
 💳 Kurs tariflari:
-🟢 Individual jonli dars:
-🔸 Erkaklar — 899,000 so'm
-🔸 Ayollar — 699,000 so'm
 
-🟡 Video dars:
-🔸 249,000 so'm
+🟢 1. Individual yondashuv tarifi
+🔹 8 ta jonli dars (haftasiga 2 marta)
+🔹 Har bir dars Abdulloh Hasaniy tomonidan o‘tiladi
+🔹 Yakka tartibda topshiriqlar, ovoz tahlili, shaxsiy maslahatlar
+🔹 Talabaga xos individual yondashuv
+🔹 Faol va mas’uliyatli qatnashuvchilarga 100% natija kafolati
+🔹 Kurs yakunida sertifikat va 50% gacha pul qaytishi imkoniyati
+🔹 Iqtidorli ayollarga Misrda mashhur hofiza Zaxro Loyiq xonim bilan maxsus maqomat guruhi imkoniyati
+🔹 Iqtidorli yigitlarga Abdulloh Hasaniy jamoasida Ustoz yordamchisi bo‘lib qolish imkoniyati
 
-👤 Adminlar:
-👉 @hasaniy_admin1
-👉 @hasaniy_admin2
+📌 Bu tarifda o‘rinlar soni cheklangan. Ulgurib qoling!
+
+💰 Narx:
+▫️ Erkaklar uchun — 899 000 so‘m
+▫️ Ayollar uchun — 699 000 so‘m
+
+🟡 2. Video darsliklar tarifi
+🔹 8 ta video darslik (30 kun ichida)
+🔹 Individual tarifdagi barcha mavzularni o‘z ichiga oladi
+🔹 Mustaqil ishlash uchun mo‘ljallangan
+🔹 Jonli dars va yakka maslahatlar mavjud emas
+🔹 Sertifikat berilmaydi
+
+📌 Ushbu tarif mustaqil ravishda o‘qishni istagan, vaqtiga egalik qiluvchi va arzon narxda sifatli ilm olishni xohlaganlar uchun juda qulay.
+
+💰 Narx:
+▫️ Umumiy: 249 000 so‘m
+
+👥 Har ikki tarifda ham ayollar qatnashishi mumkin.
+
+🕋 Bu kurs sizning Qur’on tilovati, azon ijrosi va ovoz tarbiyangizdagi yangi bosqich bo‘lishi mumkin.
+Noyob ilmiy imkoniyat va amaliy mashg‘ulotlardan bahramand bo‘lishni istasangiz — bugunoq ro‘yxatdan o‘ting!
+
+📌 Aloqa va ro‘yxatdan o‘tish uchun pastdagi tugmalardan foydalaning.
     """
     await callback.message.answer(text)
     await callback.answer()
