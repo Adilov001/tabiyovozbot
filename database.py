@@ -1,12 +1,3 @@
-from dotenv import load_dotenv
-import os
-
-load_dotenv()
-
-BOT_TOKEN = os.getenv("BOT_TOKEN")
-MONGO_URI = os.getenv("MONGO_URI")
-DB_NAME = os.getenv("DB_NAME")
-
 from pymongo import MongoClient
 from config import MONGO_URI, DB_NAME
 
@@ -22,11 +13,13 @@ async def create_db():
 async def add_user(user_id, first_name, last_name, gender, phone):
     users.update_one(
         {"user_id": user_id},
-        {"$set": {
-            "first_name": first_name,
-            "last_name": last_name,
-            "gender": gender,
-            "phone": phone
-        }},
+        {
+            "$set": {
+                "first_name": first_name,
+                "last_name": last_name,
+                "gender": gender,
+                "phone": phone
+            }
+        },
         upsert=True
     )
