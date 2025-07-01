@@ -1,5 +1,5 @@
 aiogram==3.4.1
-pydantic==1.10.9       # ← Pydantic v1 has no Rust-based core
+pydantic>=2.4.1,<2.6
 pymongo==4.7.2
 dnspython==2.4.2
-aiohttp==3.9.5
+python-dotenv==1.0.1
