@@ -1,5 +1,4 @@
 aiogram==3.4.1
-pydantic==1.10.13
 pymongo==4.7.2
 dnspython==2.4.2
 aiohttp==3.9.5
